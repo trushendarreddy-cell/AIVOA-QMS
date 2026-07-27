@@ -1,16 +1,117 @@
-# React + Vite
+# AIVOA-QMS Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+AIVOA-QMS Frontend is the user interface for the AI-Powered Pharmaceutical Quality Management System. Built with React and Redux Toolkit, it provides an interactive interface for logging customer complaints, uploading documents, reviewing AI-generated risk assessments, and managing complaint workflows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Natural language complaint input
+- PDF and document upload
+- AI-assisted complaint extraction
+- Structured complaint form
+- Complaint completeness validation
+- AI Risk Assessment dashboard
+- Root cause and CAPA recommendations
+- Duplicate complaint warnings
+- Complaint lifecycle management
+- Real-time integration with FastAPI backend
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technology Stack
+
+- React.js
+- Redux Toolkit
+- Vite
+- Axios
+- JavaScript
+- HTML5
+- CSS3
+
+---
+
+## Project Structure
+
+```text
+AIVOA-QMS/
+│── src/
+│   ├── components/
+│   ├── store/
+│   ├── App.jsx
+│   └── main.jsx
+│── public/
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## Application Flow
+
+```text
+User Prompt / Document Upload
+            │
+            ▼
+     React Components
+            │
+            ▼
+      Redux Toolkit
+            │
+            ▼
+        Axios API
+            │
+            ▼
+      FastAPI Backend
+            │
+            ▼
+      AI Processing
+            │
+            ▼
+ Updated Complaint Form
+            │
+            ▼
+ AI Risk Assessment Panel
+```
+
+---
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The frontend runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Backend
+
+This frontend communicates with the AIVOA-QMS Backend developed using FastAPI, LangGraph, SQLAlchemy, and MySQL.
+
+---
+
+## Author
+
+**T. Rushendar Reddy**
+
+B.Tech in Artificial Intelligence and Machine Learning
+
+Vignan University
+
+Hyderabad,Telangana
