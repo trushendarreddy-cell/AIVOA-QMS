@@ -78,27 +78,6 @@ User Prompt / Document Upload
 
 ---
 
-## Installation
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-The frontend runs on:
-
-```
-http://localhost:5173
-```
-
----
 
 ## Backend
 
